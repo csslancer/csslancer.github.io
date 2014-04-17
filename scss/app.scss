@@ -1,0 +1,46 @@
+@import "foundation";
+
+
+
+/* Author's styles */
+body, html {
+  background:#3cbed6;
+  font-size: emCalc(14px);
+}
+
+
+.soon-message {
+	@include panel(white, 10px);
+  	margin-top:200px;
+  	border: 0;
+
+	background-color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow:0px 1px 4px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0px 1px 4px rgba(0,0,0,0.3);
+	box-shadow:0px 1px 4px rgba(0,0,0,0.3);
+
+
+
+  	h1 {
+  		font-size: emCalc(21px);
+
+  	}
+	
+	p {
+		color: #d6543c;
+	}
+  	.progress-bar {
+	  @include progress-container;
+	  @include radius(6px);
+	  & > span {
+	    @include progress-meter(#d63c71);
+	    @include radius(5px);
+	    width: 20%;
+	}
+}
+
+  	
+}
